@@ -1,0 +1,106 @@
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            margin: 0;
+            padding: 0;
+            background-image: url('dev-background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: rgba(15, 23, 42, 0.9);
+            padding: 30px;
+            text-align: center;
+            border-bottom: 3px solid #3b82f6;
+        }
+        .team-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .developer-card {
+            background-color: rgba(30, 41, 59, 0.8);
+            border-radius: 15px;
+            padding: 30px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease;
+            border: 1px solid #1e40af;
+        }
+        .developer-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+        .developer-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #3b82f6;
+            margin: 0 auto 20px;
+        }
+        .developer-name {
+            color: #3b82f6;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .developer-title {
+            color: #94a3b8;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        .developer-bio {
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #e2e8f0;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-link {
+            color: white;
+            background-color: #3b82f6;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .social-link:hover {
+            background-color: #2563eb;
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: rgba(15, 23, 42, 0.9);
+            text-align: center;
+            padding: 30px;
+            margin-top: 80px;
+            border-top: 3px solid #3b82f6;
+        }
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: rgba(30, 41, 59, 0.9);
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 100;
+            border: 2px solid #3b82f6;
+        }
