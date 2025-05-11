@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -14,8 +13,10 @@
         <source src="background-music.mp3" type="audio/mpeg">
         متصفحك لا يدعم عنصر الصوت.
     </audio>
+
+    <!-- زر تشغيل/إيقاف الموسيقى -->
     <div class="music-control" onclick="toggleMusic()">
-        <i id="music-icon" class="fas fa-music" style="font-size: 24px; color: #3b82f6;"></i>
+        <i id="music-icon" class="fas fa-music" style="font-size: 24px; color: #8B0000;"></i>
     </div>
 
     <header>
@@ -26,11 +27,11 @@
     <div class="container">
         <div class="team-section">
 
-<div class="developer-card">
+            <div class="developer-card">
                 <img src="IMG_2873.jpeg" alt="LVL UP" class="developer-image">
                 <h2 class="developer-name">ＬＶＬ ＵＰ</h2>
                 <p class="developer-title">XTZ DEVELOPER</p>
-                <p class="developer-bio"></p>لي الشراء وبيع البوت توصل مع المطورين</p>
+                <p class="developer-bio">لي الشراء وبيع البوت توصل مع المطورين</p>
                 <div class="social-links">
                     <a href="https://t.me/LVL_UPV1" class="social-link"><i class="fab fa-telegram"></i></a>
                     <a href="https://www.instagram.com/lvl_upv1?igsh=cWw5azhuc2xhdXhi&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i></a>
@@ -81,20 +82,20 @@
         function toggleMusic() {
             if (isPlaying) {
                 music.pause();
-                musicIcon.style.color = "#64748b";
+                musicIcon.style.color = "#a94442";  // لون أحمر باهت عند الإيقاف
             } else {
                 music.play();
-                musicIcon.style.color = "#3b82f6";
+                musicIcon.style.color = "#8B0000";  // لون أحمر دموي عند التشغيل
             }
             isPlaying = !isPlaying;
         }
 
-        // بدء التشغيل التلقائي بعد تفاعل المستخدم
-        document.body.addEventListener('click', function() {
+        // تشغيل تلقائي بعد أول تفاعل
+        document.body.addEventListener('click', function () {
             if (!music.played.length) {
                 music.play();
                 isPlaying = true;
-                musicIcon.style.color = "#3b82f6";
+                musicIcon.style.color = "#8B0000";
             }
         }, { once: true });
     </script>
